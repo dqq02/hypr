@@ -1,0 +1,57 @@
+{
+    "position": "top",
+
+    "height": 40,
+    "width": 2540,
+    "spacing": 20,
+
+
+    "modules-left": ["wlr/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["custom/cmus", "custom/weather", "tray", "custom/alsa", "custom/key", "clock"],
+
+"wlr/workspaces": {
+    "format": "{icon}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "on-click": "activate",
+    "persistent_workspaces":{
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": []
+    }
+},
+
+"sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    
+"tray": {
+        "spacing": 15,
+        "icon-size": 20
+    },
+    
+"clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+
+"hyprland/window": {
+    "format": "{}",
+    "separate-outputs": false,
+    "max-length": 100
+    },
+
+"hyprland/language": {
+    "format": "{}",
+    "format-us": "US",
+    "format-ru": "RU",
+    "keyboard-name": "AT Translated Set 82e38fb0"
+    }
+}
